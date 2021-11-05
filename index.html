@@ -1,0 +1,54 @@
+<!-- FRONT -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>Regístrese como cliente:</h1>
+        <input type="text" name="nombre" placeholder="Nombre de pila:">
+        <input type="text" name="apellido" placeholder="Primer apellido:" />
+        <input type="text" name="dni" placeholder="DNI:" /><br>
+        <button class="add">Quiero registrarme</button>
+        <!--<button class="edit">Modificar mesa</button>
+        <button class="remove">Eliminar mesa</button>-->
+        <br><br><a href="/clientes">Ver lista de clientes registrados:</a>
+    </form>
+
+    <form>
+        <h1>Modificar datos de registro:</h1>
+        <input type="text" name="createDni" placeholder="Introduzca el DNI:">
+        <br>
+        <p>Introduzca los datos a modificar:</p>
+        <input type="text" name="editNombre" placeholder="Nombre de pila:">
+        <input type="text" name="editApellido" placeholder="Primer apellido:"><br>
+        <button class="edit">Modificar registro</button>
+    </form>
+
+    <form>
+        <h1>CHECK-IN:</h1>
+        <input type="text" name="checkDni" placeholder="Introduzca su DNI:">
+        <br>
+        <p>¿Qué habitación desea?</p>
+        <select class="selectHabit" name="selectHabit" type="text">
+            <option value="" disabled selected>Seleccione su habitación</option>
+            <option value="hab1">Habitación 01</option>
+            <option value="hab2">Habitación 02</option>
+            <option value="hab3">Habitación 03</option>
+            <option value="hab4">Habitación 04</option>
+            <option value="hab5">Habitación 05</option>
+            <option value="hab6">Habitación 06</option>
+            <option value="hab7">Habitación 07</option>
+            <option value="hab8">Habitación 08</option>
+        </select>
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>
